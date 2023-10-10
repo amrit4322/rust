@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update details</title>
+
+    </head>
+    <body>
+    <h1> Update your Details</h1>
+    
+        <form method="post" action="/delete">
+         
+            <label for="name">Username</label>
+            <input type="text" name="username" value="{{user_det.username}}" id="name" placeholder="Username" disabled ><br>
+            
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" value="{{user_det.firstname}}" id="fname" placeholder="First Name" disabled><br>
+
+            
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" value="{{user_det.lastname}}" id="lname" placeholder="Last Name" disabled><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" value="{{user_det.email}}" id="email" placeholder="abc@gmail.com" disabled><br>
+
+             <label for="age">Age</label>
+            <input type="number" minimum="0"  value="{{user_det.age}}" name="age" id="age" placeholder="Age" disabled><br>
+
+
+     
+            
+            <button type="submit">Are you sure you want to delete it?</button>
+        </form>
+        
+        
+
+       
+        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+
+    </head>
+    <body>
+        <form method="post" action="/registration" >
+         
+            <label for="name">Username</label>
+            <input type="text" name="username" id="name" placeholder="Username"><br>
+            
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" placeholder="First Name"><br>
+
+            
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" id="lname" placeholder="Last Name" ><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" required><br>
+
+             <label for="age">Age</label>
+            <input type="number" minimum="0" name="age" id="age" placeholder="Age" required><br>
+
+             <label for="pass">Password</label>
+            <input type="password" name="password" id="pass" placeholder="Password" required><br>
+
+              <label for="cpass">Confirm Password</label>
+            <input type="password" name="cpassword" id="cpass" placeholder="Confirm Password" required><br>
+            
+            <button type="submit">Login</button>
+        </form>
+        
+        {% if data %}
+            <p>{{data}}</p>
+        {% endif %}
+
+       
+        
+    </body>
+</html>

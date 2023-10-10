@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+       <form method="post" action="/insert">
+            <label for="username">Username</label>
+            <input type="text" value="" name="username" id="username" placeholder="Name"><br>
+            <label for="password"> Password</label>
+            <input type="password" value="" name="password" id="password" placeholder="Password"><br>
+            <button type="submit">Login </button>
+       </form>
+        
+    </body>
+</html>

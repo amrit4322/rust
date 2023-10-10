@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+       
+        <h1> Inserted</h1>
+        <p>Username : {{username}}<br>
+        Password: {{password}}
+        </p>
+          <a href="/data"><button type="submit" >Show data </button></a>
+        
+    </body>
+</html>

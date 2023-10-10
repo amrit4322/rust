@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+        <h1>
+            Data of all Users
+        </h1>
+        <table border="1">
+            <tr>
+                <th>No.</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+         
+            {%  for item in data_set %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{item.username}}</td>
+                <td>{{item.password}}</td>
+               
+            </tr>
+            {% endfor %}
+
+        </table>
+         <form method="post" action="/find">
+            <label for="name" >Name you want to find</label>
+            <input type="text" name="username" value="" id="name" placeholder="Username"><br>
+            <button type="submit">Find it</button>
+         </form>
+        
+    </body>
+</html>

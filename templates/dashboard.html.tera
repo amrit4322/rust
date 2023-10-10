@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+
+    </head>
+    <body>
+        <h1>Hii User </h1>
+        {% if data %}
+        <p> {{data}} <p>
+        {% endif %}
+        <a href="/update"><button type="submit">Update</button></a>
+        <a href="/delete"><button type="submit">Delete</button></a>
+    </body>
+</html>

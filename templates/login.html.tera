@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+
+    </head>
+    <body>
+        <form method="post" action="/login" >
+            <fieldset>
+            <legend> Login here</legend>
+            <label for="name">Username</label>
+            <input type="text" name="username" id="name" placeholder="Username" required><br>
+            <label for="pass">Password</label>
+            <input type="text" name="password" id="pass" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+            </fieldset>
+        </form>
+       
+        {% if data %}
+            <a href="/registration"><button>Register</button></a>
+            <p>{{data}}</p>
+        {% endif %}
+
+       
+        
+    </body>
+</html>
