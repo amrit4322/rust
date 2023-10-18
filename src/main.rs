@@ -216,7 +216,7 @@ async fn main(){
 
 //connecting with mongodb 
 async fn connect()-> MongoResult<ClientData> {
-  let mut client_options =ClientOptions::parse("mongodb+srv://RocketProg:Thisis4Rocket!@antier.iy2y0tq.mongodb.net/?retryWrites=true&w=majority").await?;
+  let mut client_options =ClientOptions::parse("<mongodb url>").await?;
   let server_api = ServerApi::builder().version(ServerApiVersion::V1).build();
   client_options.server_api = Some(server_api);
   let client = Client::with_options(client_options)?;
